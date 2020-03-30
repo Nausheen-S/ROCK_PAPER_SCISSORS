@@ -74,12 +74,18 @@ var computerOutput = function(){
 }
 //7)BASED ON RESULT FUNCTION IS EXECUTED
 var tie = function(){
+    document.getElementById('uWinMsg').innerHTML = "";
+    document.getElementById('cWinMsg').innerHTML = "";
     var tOutput = document.getElementById('tie');
     tOutput.innerHTML = "It's a tie!!";
 }
 var userWon = function(){
     var tOutput = document.getElementById('tie');
     tOutput.innerHTML = "";
+    document.getElementById('cWinMsg').innerHTML = "";
+    document.getElementById('uWinMsg').innerHTML = "Hurray!! You won...";
+    var playAudio = document.getElementById('audio');
+    playAudio.play();
     var uOutput = document.getElementById('user');
     userScore+=1;
     uOutput.innerHTML = userScore;
@@ -88,6 +94,8 @@ var userWon = function(){
 var compWon = function(){
     var tOutput = document.getElementById('tie');
     tOutput.innerHTML = "";
+    document.getElementById('uWinMsg').innerHTML = "";
+    document.getElementById('cWinMsg').innerHTML = "Oops!! The computer won...";
     var cOutput = document.getElementById('computer');
     compScore+=1;
     cOutput.innerHTML = compScore;
@@ -160,6 +168,8 @@ var replayClick = function(){
     console.log("replay working");
     var tOutput = document.getElementById('tie');
     tOutput.innerHTML = "";
+    document.getElementById('uWinMsg').innerHTML = "";
+    document.getElementById('cWinMsg').innerHTML = "";
     var uOutput = document.getElementById('user');
     uOutput.innerHTML = 0;
     var cOutput = document.getElementById('computer');

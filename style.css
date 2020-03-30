@@ -128,3 +128,15 @@ p.slide-next{
     width: 500%;
   }
 }
+#uWinMsg{
+	color: #e1a9f1;
+	font-family: 'Handlee', cursive;
+	font-size: 40px;
+	font-weight: bold;
+}
+#cWinMsg{
+color: #e1a9f1;
+	font-family: 'Handlee', cursive;
+	font-size: 40px;
+	font-weight: bold;
+}

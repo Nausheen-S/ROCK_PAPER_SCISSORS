@@ -1,0 +1,130 @@
+h1{
+	font-family: 'Monoton', cursive;
+	font-size: 50px;
+	font-style: italic;
+	text-align:  center;
+	color: #e1a9f1;
+}
+body{
+	background-color: #660066;
+
+}
+h2{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+  color: #e1a9f1;
+  display: inline;
+}
+span{
+  font-weight: bold;
+  color: #e1a9f1;
+  font-size: 25px;
+}
+#instruction{
+	color: #e1a9f1;
+	font-family: 'Handlee', cursive;
+	font-size: 40px;
+	text-align: center;
+}
+.buttons{
+	display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.start-button{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#start{
+	display: flex;
+	flex-flow: flex-start nowrap;
+	background-color: red;
+	padding: 20px;
+	border-radius: 25px;
+	font-size: 20px;
+	-webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 0.5s;
+
+}
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+#restart{
+	display: flex;
+	flex-flow: flex-start nowrap;
+	justify-content: space-around;
+	background-color: grey;
+	padding: 20px;
+	border-radius: 20px;
+	font-size: 20px;
+	margin: 20px;
+}
+#information{
+	display: flex;
+	flex-flow: flex-start nowrap;
+	justify-content: space-around;
+	background-color: grey;
+	padding: 20px;
+	border-radius: 20px;
+	font-size: 20px;
+}
+.images{
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 20px;
+}
+#stone{
+	border-radius: 10px;
+}
+#paper{
+	border-radius: 10px;
+}
+#scissors{
+	border-radius: 10px;
+}
+#tie{
+	color: #e1a9f1;
+	font-family: 'Handlee', cursive;
+	font-size: 40px;
+	font-weight: bold;
+}
+.slide-right {
+  width:100%;
+}
+p.slide-next{
+
+	transition: left 1s ease-out 0.5s;
+	left: 0%;
+}
+.slide{
+	position:relative;
+	left: 100%;
+  font-size: 40px;
+  color: #e1a9f1;
+	font-family: 'Handlee', cursive;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 500%;
+  }
+}

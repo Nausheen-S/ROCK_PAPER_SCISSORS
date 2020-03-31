@@ -78,14 +78,18 @@ var tie = function(){
     document.getElementById('cWinMsg').innerHTML = "";
     var tOutput = document.getElementById('tie');
     tOutput.innerHTML = "It's a tie!!";
+    var playAudioT = document.getElementById('audioTie');
+    playAudioT.play();
 }
 var userWon = function(){
     var tOutput = document.getElementById('tie');
     tOutput.innerHTML = "";
     document.getElementById('cWinMsg').innerHTML = "";
     document.getElementById('uWinMsg').innerHTML = "Hurray!! You won...";
-    var playAudio = document.getElementById('audio');
-    playAudio.play();
+    //var x = document.getElementById('uWinMsg');
+    //setTimeout(function(){x.value.style.visibility = "hidden";},3000);
+    var playAudioU = document.getElementById('audioWin');
+    playAudioU.play();
     var uOutput = document.getElementById('user');
     userScore+=1;
     uOutput.innerHTML = userScore;
@@ -96,6 +100,8 @@ var compWon = function(){
     tOutput.innerHTML = "";
     document.getElementById('uWinMsg').innerHTML = "";
     document.getElementById('cWinMsg').innerHTML = "Oops!! The computer won...";
+    var playAudioC = document.getElementById('audioLose');
+    playAudioC.play();
     var cOutput = document.getElementById('computer');
     compScore+=1;
     cOutput.innerHTML = compScore;

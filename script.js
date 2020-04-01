@@ -80,6 +80,7 @@ var tie = function(){
     tOutput.innerHTML = "It's a tie!!";
     var playAudioT = document.getElementById('audioTie');
     playAudioT.play();
+    //tOutput.innerHTML = "";
 }
 var userWon = function(){
     var tOutput = document.getElementById('tie');
@@ -186,7 +187,15 @@ var replayClick = function(){
 }
 var infoClick = function(){
     console.log("instructions working");
-    document.getElementById('instruction').innerHTML = "The logic of the game is very simple. Stone defeats scissors, scissors cuts paper and paper wraps stone. Hope you are now aready to play the game. Enjoy!!";
+    document.getElementById('instruction').innerHTML = "The logic of the game is very simple. Stone defeats scissors, scissors cuts paper and paper wraps stone. Hope you are now ready to play the game. Enjoy!!";
+    /*if(infoButton.style.display === "none"){
+        infoButton.style.display === "block";
+        document.getElementById('instruction').innerHTML = "The logic of the game is very simple. Stone defeats scissors, scissors cuts paper and paper wraps stone. Hope you are now ready to play the game. Enjoy!!";
+    }else{
+        infoButton.style.display === "none";
+        document.getElementById('instruction').innerHTML = "";
+    }*/
+
 }
 //1)GET ALL ELEMENTS NEEDED
 var playButton = document.getElementById('start');
